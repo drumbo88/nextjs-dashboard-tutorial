@@ -1,5 +1,5 @@
 import { monserrat } from './ui/fonts';
-import './ui/global.css'
+import './ui/global.css';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className} antialiased`}>{children}</body>
+      <body className={`${monserrat.className} antialiased`}>
+        <header>Header bonito</header>
+        {children}
+        <footer>Footer bonito</footer>
+      </body>
     </html>
   );
 }
