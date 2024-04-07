@@ -9,9 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${monserrat.className} antialiased`}>
-        <header>Header bonito</header>
         {children}
-        <footer>Footer bonito</footer>
       </body>
     </html>
   );
